@@ -101,6 +101,7 @@ SHELL=/bin/sh . /opt/ros/${ROS_DISTRO}/setup.sh
 echo '# END SECTION'
 
 echo '# BEGIN SECTION compile the catkin workspace'
+export CMAKE_PREFIX_PATH=/usr
 ${CMD_CATKIN_BUILD}
 echo '# END SECTION'
 
