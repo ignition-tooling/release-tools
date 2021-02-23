@@ -17,4 +17,4 @@ fi
 git -C $(${BREW_BINARY} --repo) fsck
 export HOMEBREW_UPDATE_TO_TAG=1
 ${BREW_BINARY} update
-${BREW_BINARY} install ${BREW_BASE_DEPENDCIES}
+${BREW_BINARY} install --verbose --debug ${BREW_BASE_DEPENDCIES}
